@@ -75,13 +75,8 @@ const controlBookmark = function () {
   bookmarksView.render(model.state.bookmarks);
 };
 
-const controlStoredBookmark = function () {
-  // 1) Retrieve stored bookmarks
-  const bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
-  if (!bookmarks?.length) return;
-
-  // 2) Render the bookmarks
-  bookmarksView.render(bookmarks);
+const controlStoredBookmarks = function () {
+  bookmarksView.render(model.state.bookmarks);
 };
 
 const init = function () {
@@ -90,6 +85,6 @@ const init = function () {
   recipeView.addHandlerBookmark(controlBookmark);
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerPagination(controlPagination);
-  bookmarksView.addHandlerRenderBookmark(controlStoredBookmark);
+  bookmarksView.addHandlerRenderStoredBookmark(controlStoredBookmarks);
 };
 init();

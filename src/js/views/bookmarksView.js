@@ -5,8 +5,8 @@ class BookmarksView extends View {
   _parentEl = document.querySelector('.bookmarks__list');
   _errorMessage = 'No bookmarks yet! Add bookmark to make it show up here ;)';
   _message;
-
-  addHandlerRenderBookmark(handler) {
+  //
+  addHandlerRenderStoredBookmark(handler) {
     window.addEventListener('load', handler);
   }
 
