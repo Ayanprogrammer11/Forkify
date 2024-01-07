@@ -1,6 +1,7 @@
 import icons from 'url:../../img/icons.svg';
 import View from './view';
 import { Fraction } from 'fractional';
+import { KEY } from '../config';
 
 class RecipeView extends View {
   _parentEl = document.querySelector('.recipe');
@@ -78,7 +79,9 @@ class RecipeView extends View {
               </div>
             </div>
 
-            <div class="recipe__user-generated">
+            <div class="recipe__user-generated ${
+              this._data.key === KEY ? '' : 'hidden'
+            }">
               <svg>
                 <use href="${icons}#icon-user"></use>
               </svg>
