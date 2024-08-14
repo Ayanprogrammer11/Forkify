@@ -2,7 +2,7 @@ import View from './View.js';
 import icons from 'url:../../img/icons.svg'; // Parcel 2
 
 class AddRecipeView extends View {
-  _parentEl = document.querySelector('.upload');
+  _parentElement = document.querySelector('.upload');
   _message = 'Recipe was successfully uploaded :)';
 
   _window = document.querySelector('.add-recipe-window');
@@ -31,7 +31,7 @@ class AddRecipeView extends View {
   }
 
   addHandlerUpload(handler) {
-    this._parentEl.addEventListener('submit', function (e) {
+    this._parentElement.addEventListener('submit', function (e) {
       e.preventDefault();
       const dataArr = [...new FormData(this)];
       const data = Object.fromEntries(dataArr);

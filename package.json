@@ -1,22 +1,21 @@
 {
   "name": "forkify",
   "version": "1.0.0",
-  "description": "An App for recipes (Forkify) made from MVC Architecture in Vanilla Javascript",
+  "description": "Recipe application",
+  "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
-  "author": "Ayan Liaqat",
+  "author": "Jonas Schedtmann",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.10.3",
-    "autoprefixer": "^10.4.16",
-    "parcel": "^2.10.3",
-    "postcss": "^8.4.32"
+    "parcel": "^2.0.0-beta.1",
+    "sass": "^1.26.10"
   },
   "dependencies": {
-    "core-js": "^3.35.0",
+    "core-js": "^3.6.5",
     "fractional": "^1.0.0",
-    "regenerator-runtime": "^0.14.1"
+    "regenerator-runtime": "^0.13.7"
   }
 }
