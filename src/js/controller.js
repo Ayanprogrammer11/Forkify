@@ -2,12 +2,12 @@ import 'regenerator-runtime/runtime';
 import { async } from 'regenerator-runtime';
 import 'core-js/stable';
 import * as model from './model.js';
-import recipeView from './View.jss/recipeView.js';
-import searchView from './View.jss/searchView.js';
-import resultsView from './View.jss/resultsView.js';
-import paginationView from './View.jss/paginationView.js';
-import bookmarksView from './View.jss/bookmarksView.js';
-import addRecipeView from './View.jss/addRecipeView.js';
+import recipeView from './views/recipeView.js';
+import searchView from './views/searchView.js';
+import resultsView from './views/resultsView.js';
+import paginationView from './views/paginationView.js';
+import bookmarksView from './views/bookmarksView.js';
+import addRecipeView from './views/addRecipeView.js';
 import { MODAL_CLOSE_SEC } from './config.js';
 
 const controlRecipes = async function () {
